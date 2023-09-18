@@ -1,0 +1,25 @@
+@import "../../styles/variables.scss";
+
+.app__top__bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: $main__topbar__color;
+  column-gap: 20px;
+  padding: 0.4rem 0 !important;
+  .egy__air__forces {
+    font-weight: $fw_800;
+    word-spacing: 6px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .app__top__bar {
+    .egy__air__forces {
+      display: none;
+      font-size: 10px !important;
+    }
+  }
+}

@@ -1,0 +1,141 @@
+@import "../../styles/variables.scss";
+
+.main__header__container {
+  background-color: $white__color;
+  padding: 1.4rem 0;
+  background-image: linear-gradient(to left, #ffffffda, #ffffff),
+    url("/assets/bg/header-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .wide {
+    padding-left: 18px;
+    padding-right: 18px;
+    margin: 0 auto;
+    max-width: 1440px;
+    .main__header__right {
+      .logo__container {
+        color: $main__black__text__color;
+        display: inline-flex !important;
+        align-items: center;
+        column-gap: 12px;
+        .website__name {
+          margin-top: 10px;
+          .forces__name,
+          .zmc__name,
+          .alnosor__name {
+            margin: 0;
+            color: $grey__text__color;
+            font-weight: $fw_600;
+          }
+          .alnosor__name {
+            font-size: $fs__16 !important;
+            font-weight: $fw_900;
+            padding: 2px 0;
+          }
+        }
+      }
+    }
+    .main__header__left {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      .center__information {
+        display: flex;
+        align-items: center;
+        .inf {
+          display: flex;
+          column-gap: 10px;
+          align-items: center;
+          &:not(:last-of-type) {
+            border-left: 1px dashed #00000041;
+            padding: 0 30px;
+          }
+          &:last-of-type {
+            padding-right: 15px;
+          }
+          .icon {
+            color: $red__color;
+            font-size: xx-large;
+          }
+          .title {
+            color: $grey__text__color;
+            font-weight: $fw_500;
+            font-size: $fs__12;
+            margin-bottom: 5px;
+          }
+          .value {
+            color: $blue__color;
+            font-weight: $fw_700;
+            font-size: 13px;
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+  .mobile__nav__btn__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    button {
+      all: unset;
+      cursor: pointer;
+      font-size: $fs__24;
+      padding-left: 10px;
+      color: $main__topbar__color;
+      &.open {
+        color: $red__color;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main__header__container {
+    padding: 1.2rem 0;
+
+    .wide {
+      .main__header__right {
+        .logo__container {
+          img {
+            width: 80px;
+            height: 80px;
+          }
+          .website__name {
+            .forces__name,
+            .zmc__name,
+            .alnosor__name {
+              font-size: 12px !important;
+            }
+            .alnosor__name {
+              font-size: 14px !important;
+            }
+          }
+        }
+      }
+      .main__header__left {
+        .center__information {
+          .inf {
+            font-size: 11px;
+            &:not(:last-of-type) {
+              border-left: 1px dashed #00000041;
+              padding: 0 20px;
+            }
+            &:last-of-type {
+              padding-right: 10px;
+            }
+            .icon {
+              font-size: 18px;
+            }
+            .title {
+              font-size: 11px;
+            }
+            .value {
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

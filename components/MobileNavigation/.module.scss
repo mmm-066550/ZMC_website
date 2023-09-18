@@ -1,0 +1,15 @@
+@import "../../styles/variables.scss";
+.mobile__nav__wrapper {
+  height: 420px;
+  background-color: $blue__color;
+  .nav__list {
+    padding: 1rem 0;
+    margin: 0;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: space-evenly;
+  }
+}

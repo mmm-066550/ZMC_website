@@ -8,6 +8,8 @@
   background-color: $main__topbar__color;
   column-gap: 20px;
   padding: 0.4rem 0 !important;
+  pointer-events: none;
+  user-select: none;
   .egy__air__forces {
     font-weight: $fw_800;
     word-spacing: 6px;

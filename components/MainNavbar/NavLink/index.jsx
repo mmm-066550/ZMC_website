@@ -10,7 +10,7 @@ export default function NavLink({ el }) {
     <li className={styles.nav__item}>
       <Link
         className={`${styles.nav__link} ${
-          pathname == `/${el.route}` ? styles.active : ""
+          pathname == `/${el.route}` ? styles.active : null
         }`}
         href={`/${el.route}`}
       >

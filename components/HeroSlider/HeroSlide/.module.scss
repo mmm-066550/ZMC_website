@@ -1,0 +1,63 @@
+@import "../../../styles/variables.scss";
+
+.hero__slide__wrapper {
+  height: 39vw;
+  background: #000;
+  position: relative;
+  .image__bg__wrapper,
+  .overlay,
+  .slide__content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .image__bg__wrapper {
+    z-index: 1;
+  }
+  .overlay {
+    background: linear-gradient(to right, #20338527, #ffffff52);
+    z-index: 2;
+  }
+  .slide__content {
+    color: #fff;
+    position: absolute;
+    z-index: 3;
+    .heading {
+      font-size: $fs__24;
+      font-weight: $fw_800;
+      color: $blue__color;
+    }
+    .slogan {
+      font-weight: $fw_900;
+      color: $main__black__text__color;
+      font-size: 3rem;
+      margin: 2rem 0;
+      margin-bottom: 3rem;
+    }
+    .btn {
+      all: unset;
+      cursor: pointer;
+      color: #fff;
+      background-color: $main__topbar__color;
+      padding: 1rem 3.5rem;
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }
+  &.darkBg {
+    .overlay {
+      background: linear-gradient(to left, #203385b7, #ffffff34);
+      z-index: 2;
+    }
+    .slide__content {
+      .heading {
+        color: #fff;
+      }
+      .slogan {
+        color: #fff;
+      }
+    }
+  }
+}

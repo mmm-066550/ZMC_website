@@ -42,7 +42,7 @@ export default function MainHeader({ mobileMenuOpen, setMobileMenuOpen }) {
             <div className={styles.mobile__nav__btn__wrapper}>
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className={mobileMenuOpen && styles.open}
+                className={mobileMenuOpen ? styles.open : null}
               >
                 {!mobileMenuOpen ? <TfiMenu /> : <LiaTimesSolid />}
               </button>

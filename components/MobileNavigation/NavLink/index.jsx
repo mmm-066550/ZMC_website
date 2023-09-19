@@ -13,7 +13,7 @@ export default function NavLink({ el, setMobileMenuOpen, mobileMenuOpen }) {
     >
       <Link
         className={`${styles.nav__link} ${
-          pathname == `/${el.route}` ? styles.active : ""
+          pathname == `/${el.route}` ? styles.active : null
         }`}
         href={`/${el.route}`}
       >

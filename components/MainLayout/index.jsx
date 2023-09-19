@@ -5,6 +5,7 @@ import MainTopBar from "../MainTopBar";
 import MainHeader from "../MainHeader";
 import MainNavbar from "../MainNavbar";
 import MobileNavigation from "../MobileNavigation";
+import HeroSlider from "../HeroSlider";
 import { useState } from "react";
 
 export default function MainLayout({ children }) {
@@ -22,6 +23,7 @@ export default function MainLayout({ children }) {
         mobileMenuOpen={mobileMenuOpen}
         setMobileMenuOpen={setMobileMenuOpen}
       />
+      <HeroSlider />
       {children}
     </main>
   );

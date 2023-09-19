@@ -24,7 +24,7 @@ export default function MainLayout({ children }) {
         setMobileMenuOpen={setMobileMenuOpen}
       />
       <HeroSlider />
-      {children}
+      {/* {children} */}
     </main>
   );
 }

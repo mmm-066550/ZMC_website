@@ -20,9 +20,9 @@ export default function HeroSlide({ el, darkBg }) {
       <div className={styles.slide__content}>
         <div className="container h-100">
           <div className="row h-100">
-            <div className="col-6">
+            <div className=" col-12 col-md-7 col-lg-6">
               <div className="d-flex align-items-center h-100">
-                <div className="d-inline-flex flex-column align-items-start">
+                <div className="d-inline-flex flex-column align-items-md-start text-center text-md-end align-items-center">
                   <h6 className={styles.heading}>مركز النسور لذوى الهمم</h6>
                   <h1 className={styles.slogan}>
                     لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على

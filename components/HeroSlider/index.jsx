@@ -13,7 +13,7 @@ import styles from "./.module.scss";
 export default function HeroSlider() {
   return (
     <div className={styles.hero__slider__wrapper}>
-      <div className={styles.swiper__nav__btns}>
+      <div className={`${styles.swiper__nav__btns} d-none d-xl-flex`}>
         <div className={`container ${styles.wide}`}>
           <button className={styles.swiper_button_next}>
             <AiOutlineRight className={styles.icon} />

@@ -1,10 +1,11 @@
 "use client";
 
-import styles from "./.module.scss";
-import MainTopBar from "../MainTopBar";
-import MainHeader from "../MainHeader";
-import MainNavbar from "../MainNavbar";
-import MobileNavigation from "../MobileNavigation";
+import MainTopBar from "./MainTopBar";
+import MainHeader from "./MainHeader";
+import MainNavbar from "./MainNavbar";
+import MainMenu from "./MainMenu";
+import MobileNavigation from "./MobileNavigation";
+import MainFooter from "./MainFooter";
 
 import { useState } from "react";
 
@@ -12,7 +13,7 @@ export default function MainLayout({ children }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <main className={styles.app__main__layout__container}>
+    <main className={"app__main__layout__container"}>
       <MainTopBar />
       <MainHeader
         mobileMenuOpen={mobileMenuOpen}
@@ -23,7 +24,9 @@ export default function MainLayout({ children }) {
         mobileMenuOpen={mobileMenuOpen}
         setMobileMenuOpen={setMobileMenuOpen}
       />
-      {children}
+      {/* {children} */}
+      <MainMenu />
+      <MainFooter />
     </main>
   );
 }

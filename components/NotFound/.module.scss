@@ -1,0 +1,76 @@
+@import "../../styles/variables.scss";
+
+.not__found {
+  background-color: #fff;
+  //   height: 500px;
+  padding: 7rem 0;
+  position: relative;
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("/assets/patterns/bg-3.png");
+    background-size: cover;
+    background-position: right top;
+    background-size: 20%;
+    opacity: 0.5;
+    z-index: 1;
+    content: "";
+  }
+  .wrapper {
+    position: relative;
+    z-index: 2;
+    ._404 {
+      margin: 0;
+      padding: 0;
+      font-size: 16rem;
+      font-weight: 900;
+      color: $blue__color;
+    }
+    .head {
+      margin: 2rem 0;
+      font-weight: 600;
+    }
+    .back__btn {
+      margin-top: 1rem;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 1.2rem 3rem;
+      color: #fff;
+      background-color: $main__topbar__color;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .not__found {
+    .wrapper {
+      .__404__img {
+        img {
+          width: 400px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 430px) {
+  .not__found {
+    .__404__img {
+      img {
+        width: 300px !important;
+        height: 100px;
+      }
+    }
+    .head {
+      margin: 1.25rem !important;
+      font-weight: 600;
+    }
+    .back__btn {
+      font-size: 12px !important;
+      padding: 1rem 2rem !important;
+    }
+  }
+}

@@ -1,6 +1,17 @@
 import React from "react";
 import styles from "./.module.scss";
 import Image from "next/image";
+import { Aref_Ruqaa_Ink, Kufam } from "next/font/google";
+const ari = Aref_Ruqaa_Ink({
+  subsets: "arabic",
+  preload: false,
+  weight: "700",
+});
+const kufam = Kufam({
+  subsets: "arabic",
+  preload: false,
+  weight: "700",
+});
 
 const items = [
   {
@@ -43,7 +54,7 @@ export default function SetsUsPartSection() {
           <div className="row align-items-center justify-content-center">
             <div className="col-12 col-xl-6 text-center text-xl-end">
               <div className={styles.text}>
-                <h5>ما يـمـيـزنــا</h5>
+                <h5 className={kufam.className}>ما يـمـيـزنــا</h5>
                 <p>
                   ينفرد مركز النسور لذوي الهمم ( زايد الطبي ) بالعديد من
                   المميزات التي تجعله منفرداً على مستوى مصر وأفريقيا من خلال
@@ -55,7 +66,7 @@ export default function SetsUsPartSection() {
               return (
                 <div
                   key={index}
-                  className="col-12 col-md-6 col-lg-4 col-xl-3 p-4"
+                  className="col-12 col-md-6 col-lg-4 col-xl-3 p-5 p-md-4"
                 >
                   <div className={styles.item__card}>
                     <Image

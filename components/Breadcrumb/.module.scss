@@ -1,0 +1,63 @@
+@import "../../styles/variables.scss";
+.breadcrumb__wrapper {
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden !important;
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    // background-image: linear-gradient(#000000ad, #000000ad),
+    //   url("/assets/bg/bc-academy.jpg");
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: 100%;
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
+    z-index: 1;
+    content: "";
+  }
+  .breadcrumb__container {
+    position: relative;
+    z-index: 2;
+    .breadcrumb__heading {
+      font-size: 4.5rem;
+      font-weight: 800;
+      color: #fff;
+      text-shadow: 1px 1px 5px #000;
+    }
+    .breadcrumb__list {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      margin-top: 2.6rem;
+      align-items: center;
+      justify-content: center;
+      .breadcrumb__item {
+        .icon {
+          color: #fff;
+          font-size: 20px;
+        }
+        .link {
+          color: #fff;
+        }
+        .pathname {
+          font-weight: 600;
+          font-size: 16px;
+          color: #fff;
+          text-shadow: 1px 1px 2px #000;
+        }
+        .current {
+          color: $main__topbar__color;
+          font-size: 20px;
+          font-weight: 900;
+        }
+      }
+    }
+  }
+}

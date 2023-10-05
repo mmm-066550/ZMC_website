@@ -3,17 +3,9 @@
 import styles from "./.module.scss";
 import NavLink from "./NavLink";
 import { SiMaildotru } from "react-icons/si";
+import SiteMap from "../../../site";
 
 export default function MainNavbar() {
-  const SiteMap = [
-    { name: "الرئيسية", route: "" },
-    { name: "الأكاديمية", route: "academy" },
-    { name: "من نحن", route: "about-us" },
-    { name: "أقسامنا", route: "our-departments" },
-    { name: "المعرض", route: "gallery" },
-    { name: "الأخبار", route: "blog" },
-  ];
-
   return (
     // <div className="container">
     //   <div className="row g-0">
@@ -24,7 +16,7 @@ export default function MainNavbar() {
           <div className="col-12 col-lg-8 col-xl-9">
             <div className={styles.navigation__wrapper}>
               <ul className={styles.nav__list}>
-                {SiteMap.map((el, i) => (
+                {SiteMap.filter((item) => item.nav).map((el, i) => (
                   <NavLink key={i} el={el} />
                 ))}
               </ul>

@@ -1,0 +1,1 @@
+const socialLinks = [{ name: "", link: "" }];

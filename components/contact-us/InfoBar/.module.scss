@@ -1,0 +1,44 @@
+@import "../../../styles/variables.scss";
+
+.info__wrapper {
+  background-color: #000;
+  position: relative;
+  z-index: 3;
+  .info__container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    // height: 70px;
+    .info__fact {
+      background-color: $main__topbar__color;
+      height: 170px;
+      display: flex;
+      align-items: center;
+      column-gap: 25px;
+      color: #fff;
+      padding: 0 3rem;
+      .icon {
+        color: #fff;
+        font-size: 3.75rem;
+      }
+      .fact {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        .title {
+          font-weight: 500;
+        }
+        .value {
+          font-size: 16px;
+          font-weight: 700;
+          margin: 0;
+        }
+      }
+    }
+    .info__fact__ {
+      background-color: $blue__color;
+    }
+  }
+}

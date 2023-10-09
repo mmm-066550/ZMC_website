@@ -3,9 +3,13 @@
 .main__menu {
   min-height: 550px;
   background: linear-gradient(#00000030, #00000030), url("/assets/bg/menu.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   color: #fff;
   display: flex;
   align-items: center;
+  padding: 4rem 0;
   .menu__column {
     display: flex;
     flex-direction: column;
@@ -30,7 +34,7 @@
       align-items: center;
       column-gap: 20px;
       .icon {
-        font-size: 3rem;
+        font-size: 2.5rem;
       }
       span {
         font-size: 1.25rem;
@@ -87,6 +91,75 @@
           &:hover {
             background-color: #fff;
             color: $blue__color;
+          }
+        }
+      }
+    }
+  }
+  .column__heading {
+    padding: 2rem 0 1.5rem 0;
+    margin-bottom: 3rem;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-color: $main__topbar__color;
+      width: 85px;
+      height: 5px;
+    }
+  }
+  .work__hours__list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    .list__item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.2rem 0;
+      font-size: 16px;
+      font-weight: 500;
+      &:not(:last-of-type) {
+        border-bottom: 1px dashed #fff;
+      }
+    }
+  }
+  .links__list {
+    .list__item {
+      margin: 1.5rem 0;
+      .link {
+        font-size: 16px;
+        color: #fff;
+        .icon {
+          color: $main__topbar__color;
+          font-size: 24px;
+          margin-left: 0.75rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: "576px") {
+  .main__menu {
+    .work__hours__list {
+      .list__item {
+        font-size: 14px;
+      }
+    }
+    .links__list {
+      .list__item {
+        margin: 1.75rem 0;
+        .link {
+          font-size: 13px;
+          color: #fff;
+          .icon {
+            color: $main__topbar__color;
+            font-size: 20px;
+            margin-left: 0.4rem;
           }
         }
       }

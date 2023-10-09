@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./.module.scss";
 import { Rakkas } from "next/font/google";
 const rakkas = Rakkas({
-  subsets: "arabic",
+  subsets: "latin",
   preload: false,
   weight: "400",
 });

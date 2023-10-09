@@ -1,8 +1,9 @@
 import React from "react";
 import styles from "./.module.scss";
 import Image from "next/image";
-import { BsMailbox2 } from "react-icons/bs";
+import { AiOutlineMail } from "react-icons/ai";
 import { RiSendPlaneFill } from "react-icons/ri";
+import { BiChevronsLeft } from "react-icons/bi";
 import {
   FaFacebookF,
   FaInstagram,
@@ -10,13 +11,14 @@ import {
   FaLinkedinIn,
   FaGooglePlusG,
 } from "react-icons/fa";
+import Link from "next/link";
 
 export default function MainMenu() {
   return (
     <menu className={styles.main__menu}>
       <div className="container">
         <div className="row">
-          <div className="col-4">
+          <div className="col-12 col-lg-6 col-xl-4 px-4 px-sm-0">
             <div className={styles.menu__column}>
               <div
                 style={{ columnGap: "30px" }}
@@ -24,8 +26,8 @@ export default function MainMenu() {
               >
                 <Image
                   style={{ opacity: ".9" }}
-                  width={110}
-                  height={140}
+                  width={100}
+                  height={130}
                   src={"/assets/icons/NosorLogo-b&w.png"}
                   alt="as"
                 />
@@ -42,8 +44,8 @@ export default function MainMenu() {
                 </div>
               </div>
               <div className={styles.d__flex}>
-                <BsMailbox2 className={styles.icon} />
-                <span>اشترك لمعرفة أخر أخبارنا</span>
+                <AiOutlineMail className={styles.icon} />
+                <span>اشترك لتصلك أخر أخبارنا</span>
               </div>
 
               <div className={styles.subscription__form__wrapper}>
@@ -87,8 +89,103 @@ export default function MainMenu() {
               </ul>
             </div>
           </div>
-          <div className="col-4">.....</div>
-          <div className="col-4">.....</div>
+          <div className="col-12 col-lg-6 col-xl-4 mt-4 mt-xl-0 px-4 px-sm-0">
+            <h4 className={styles.column__heading}>روابط مختصرة</h4>
+            <div className="row">
+              <div className="col">
+                <ul className={styles.links__list}>
+                  <li className={styles.list__item}>
+                    <Link className={styles.link} href={"/"}>
+                      <BiChevronsLeft className={`${styles.icon}`} />
+                      الصفحة الرئيسية
+                    </Link>
+                  </li>
+                  <li className={styles.list__item}>
+                    <Link className={styles.link} href={"/"}>
+                      <BiChevronsLeft className={`${styles.icon}`} />
+                      الصفحة الرئيسية
+                    </Link>
+                  </li>
+                  <li className={styles.list__item}>
+                    <Link className={styles.link} href={"/"}>
+                      <BiChevronsLeft className={`${styles.icon}`} />
+                      الصفحة الرئيسية
+                    </Link>
+                  </li>
+                  <li className={styles.list__item}>
+                    <Link className={styles.link} href={"/"}>
+                      <BiChevronsLeft className={`${styles.icon}`} />
+                      الصفحة الرئيسية
+                    </Link>
+                  </li>
+                  <li className={styles.list__item}>
+                    <Link className={styles.link} href={"/"}>
+                      <BiChevronsLeft className={`${styles.icon}`} />
+                      الصفحة الرئيسية
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="col">
+                <ul className={styles.links__list}>
+                  <li className={styles.list__item}>
+                    <Link className={styles.link} href={"/"}>
+                      <BiChevronsLeft className={`${styles.icon}`} />
+                      الصفحة الرئيسية
+                    </Link>
+                  </li>{" "}
+                  <li className={styles.list__item}>
+                    <Link className={styles.link} href={"/"}>
+                      <BiChevronsLeft className={`${styles.icon}`} />
+                      الصفحة الرئيسية
+                    </Link>
+                  </li>{" "}
+                  <li className={styles.list__item}>
+                    <Link className={styles.link} href={"/"}>
+                      <BiChevronsLeft className={`${styles.icon}`} />
+                      الصفحة الرئيسية
+                    </Link>
+                  </li>{" "}
+                  <li className={styles.list__item}>
+                    <Link className={styles.link} href={"/"}>
+                      <BiChevronsLeft className={`${styles.icon}`} />
+                      الصفحة الرئيسية
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="col-12 col-xl-4 mt-4 mt-xl-0 px-4 px-sm-0">
+            {" "}
+            <h4 className={styles.column__heading}>ساعات العمل</h4>
+            <ul className={styles.work__hours__list}>
+              <li className={styles.list__item}>
+                <span className={styles.day}>السبت </span>
+                <span className={styles.time}>
+                  9:00 صباحاٌ <span className="px-3"> : </span> 5:00 مساءاٌ
+                </span>
+              </li>{" "}
+              <li className={styles.list__item}>
+                <span className={styles.day}>الاحد - الاثنين </span>
+                <span className={styles.time}>
+                  9:00 صباحاٌ <span className="px-3"> : </span> 2:00 مساءاٌ
+                </span>
+              </li>{" "}
+              <li className={styles.list__item}>
+                <span className={styles.day}>الثلاثاء - الاربعاء </span>
+                <span className={styles.time}>
+                  9:00 صباحاٌ <span className="px-3"> : </span> 5:00 مساءاٌ
+                </span>
+              </li>{" "}
+              <li className={styles.list__item}>
+                <span className={styles.day}>الخميس </span>
+                <span className={styles.time}>
+                  12:00 صباحاٌ <span className="px-3"> : </span> 5:00 مساءاٌ
+                </span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </menu>

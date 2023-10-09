@@ -5,12 +5,12 @@ import { Aref_Ruqaa_Ink, Kufam } from "next/font/google";
 const ari = Aref_Ruqaa_Ink({
   subsets: "arabic",
   preload: false,
-  weight: "700",
+  weight: "400",
 });
 const kufam = Kufam({
   subsets: "arabic",
   preload: false,
-  weight: "700",
+  weight: "400",
 });
 
 const items = [

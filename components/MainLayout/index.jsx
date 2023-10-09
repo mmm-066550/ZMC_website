@@ -24,7 +24,7 @@ export default function MainLayout({ children }) {
         mobileMenuOpen={mobileMenuOpen}
         setMobileMenuOpen={setMobileMenuOpen}
       />
-      {/* {children} */}
+      {children}
       <MainMenu />
       <MainFooter />
     </main>

@@ -9,11 +9,6 @@ import MainLayout from "../../components/MainLayout";
 import { Cairo } from "next/font/google";
 const cairo = Cairo({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "مركز النسور لذوى الهمم | الرئيسية",
-  description: "مركز النسور لذوى الهمم ( زايد الطبي )",
-};
-
 export default function RootLayout({ children }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 

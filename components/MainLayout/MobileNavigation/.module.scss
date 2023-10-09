@@ -1,15 +1,44 @@
 @import "../../../styles/variables.scss";
 .mobile__nav__wrapper {
-  height: 420px;
-  background-color: $blue__color;
-  .nav__list {
-    padding: 1rem 0;
-    margin: 0;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0000008c;
+  z-index: 100000;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  transition: all linear 0.7s;
+  &.open {
+    left: 0;
+  }
+  .content__wrapper {
+    background-color: #fff;
+    width: 80%;
     height: 100%;
-    color: #fff;
     display: flex;
     flex-direction: column;
-    // align-items: center;
-    justify-content: space-evenly;
+    .top {
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+      border-bottom: 1px solid #d4d4d4;
+    }
+    button {
+      all: unset;
+      cursor: pointer;
+      color: $red__color;
+      font-size: 2rem;
+      margin-top: -7px;
+      margin-right: 1rem;
+    }
+    .nav__list {
+      padding: 1rem 0;
+      margin: 0;
+      height: 100%;
+      color: #fff;
+    }
   }
 }

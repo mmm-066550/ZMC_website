@@ -17,7 +17,7 @@ export default function NavLink({ el, setMobileMenuOpen, mobileMenuOpen }) {
         }`}
         href={`/${el.route}`}
       >
-        {el.name}
+        <span>{el.name}</span>
       </Link>
     </li>
   );

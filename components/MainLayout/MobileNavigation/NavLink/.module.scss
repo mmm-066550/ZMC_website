@@ -1,17 +1,21 @@
 @import "../../../../styles/variables.scss";
 
 .nav__item {
+  margin: 0.2rem 0;
   display: flex;
   .nav__link {
     width: 100%;
-    padding: 0.75rem;
-    font-size: $fs__18;
-    text-align: center;
-    font-weight: $fw_600;
-    color: #fff;
+    padding: 0.65rem 1.7rem;
+    font-weight: $fw_700;
+    color: $blue__color;
     &.active {
-      background-image: linear-gradient(to left, #ffffffa9, #ffffff0e);
-      border-right: 10px solid $main__topbar__color;
+      color: #fff;
+      background-image: linear-gradient(to left, #182974 50%, #ffffff00 100%);
+      border-right: 8px solid $main__topbar__color;
+      font-weight: 600;
+      span {
+        margin-right: -8px;
+      }
     }
   }
 }

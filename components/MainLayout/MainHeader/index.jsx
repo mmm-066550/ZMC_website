@@ -4,7 +4,6 @@ import Image from "next/image";
 import { HiOutlineLocationMarker, HiOutlinePhone } from "react-icons/hi";
 import { AiOutlineFieldTime } from "react-icons/ai";
 import { TfiMenu } from "react-icons/tfi";
-import { LiaTimesSolid } from "react-icons/lia";
 
 export default function MainHeader({ mobileMenuOpen, setMobileMenuOpen }) {
   return (
@@ -40,11 +39,8 @@ export default function MainHeader({ mobileMenuOpen, setMobileMenuOpen }) {
           </div>
           <div className="col d-md-none">
             <div className={styles.mobile__nav__btn__wrapper}>
-              <button
-                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className={mobileMenuOpen ? styles.open : null}
-              >
-                {!mobileMenuOpen ? <TfiMenu /> : <LiaTimesSolid />}
+              <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+                <TfiMenu />
               </button>
             </div>
           </div>

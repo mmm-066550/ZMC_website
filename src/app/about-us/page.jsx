@@ -1,5 +1,6 @@
 import React from "react";
 import Breadcrumb from "../../../components/Breadcrumb";
+import CenterVision from "../../../components/home/CenterVisionSection";
 
 export const metadata = {
   title: "مركز النسور لذوى الهمم | من نحن",
@@ -21,6 +22,7 @@ export default function AboutUsPage() {
         ]}
         heading={"من  نحن"}
       />
+      <CenterVision />
     </div>
   );
 }

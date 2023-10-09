@@ -10,7 +10,7 @@ export default function InfoBar() {
       <div className={styles.info__container}>
         <div className="container">
           <div className="row">
-            <div className="col-4 p-0">
+            <div className="col-12 col-xl-4 p-0">
               <div className={styles.info__fact}>
                 <span className={styles.icon}>
                   <FaMapLocationDot />
@@ -23,7 +23,7 @@ export default function InfoBar() {
                 </div>
               </div>
             </div>
-            <div className="col-4 p-0">
+            <div className="col-12 col-xl-4 p-0">
               <div className={`${styles.info__fact} ${styles.info__fact__}`}>
                 <span className={styles.icon}>
                   <MdMarkEmailUnread />
@@ -34,7 +34,7 @@ export default function InfoBar() {
                 </div>
               </div>
             </div>
-            <div className="col-4 p-0">
+            <div className="col-12 col-xl-4 p-0">
               <div className={styles.info__fact}>
                 <span className={styles.icon}>
                   <PiPhoneCallFill />

@@ -1,15 +1,14 @@
 @import "../../../styles/variables.scss";
 
 .info__wrapper {
-  background-color: #000;
   position: relative;
   z-index: 3;
   .info__container {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    transform: translateY(-50%);
+    // position: absolute;
+    // left: 0;
+    // top: 0;
+    // width: 100%;
+    // transform: translateY(-50%);
     // height: 70px;
     .info__fact {
       background-color: $main__topbar__color;
@@ -39,6 +38,18 @@
     }
     .info__fact__ {
       background-color: $blue__color;
+    }
+  }
+}
+
+@media screen and (min-width: "1200px") {
+  .info__wrapper {
+    .info__container {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      transform: translateY(-50%);
     }
   }
 }

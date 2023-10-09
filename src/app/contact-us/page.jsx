@@ -22,7 +22,7 @@ export default function Contact_us() {
             current: true,
           },
         ]}
-        heading={"تواصل معنا"}
+        heading={"تواصل"}
       />
       <GetInTouchForm />
       <InfoBar />

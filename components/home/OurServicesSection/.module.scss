@@ -1,0 +1,56 @@
+@import "../../../styles/variables.scss";
+
+.our_services__section {
+  padding: 5rem 0;
+  background-color: #fff;
+  .title {
+    opacity: 0.8;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .heading {
+    text-align: center;
+    color: #090a1f;
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 3rem;
+    padding: 1rem;
+  }
+  .item__card {
+    background-color: #090a1f;
+    height: 360px;
+    border-radius: 12px;
+    padding: 2.25rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 8px;
+    cursor: pointer;
+    .head {
+      margin-top: 18px;
+      font-weight: 700;
+      color: #fff;
+      padding: 1rem 0;
+      font-size: 1.5rem;
+    }
+    .text {
+      color: #fff;
+      padding: 0;
+      font-size: 15px;
+      line-height: 28px;
+      //   opacity: 0.5;
+    }
+  }
+  .link {
+    background-color: $main__topbar__color;
+    color: #fff;
+    padding: 1rem 3rem;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 2rem 0;
+    display: inline-block;
+  }
+}

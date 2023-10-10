@@ -14,6 +14,7 @@ export default function HeroSlide({ item }) {
           alt="d"
           fill={true}
           objectFit="cover"
+          priority
         />
       </div>
       <div className={styles.overlay}></div>

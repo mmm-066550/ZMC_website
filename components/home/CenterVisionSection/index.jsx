@@ -24,7 +24,7 @@ export default function CenterVision() {
                 <button className={styles.play__btn}>
                   <ImPlay3 className={styles.icon} />
                 </button>
-                <Image src={"/assets/images/hex.png"} alt="hex" fill />
+                <Image priority src={"/assets/images/hex.png"} alt="hex" fill />
               </div>
             </div>
             <div className="col-12 col-lg-6">

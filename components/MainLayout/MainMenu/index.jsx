@@ -101,27 +101,27 @@ export default function MainMenu() {
                     </Link>
                   </li>
                   <li className={styles.list__item}>
-                    <Link className={styles.link} href={"/"}>
+                    <Link className={styles.link} href={"/academy"}>
                       <BiChevronsLeft className={`${styles.icon}`} />
-                      الصفحة الرئيسية
+                      الأكاديمية
                     </Link>
                   </li>
                   <li className={styles.list__item}>
-                    <Link className={styles.link} href={"/"}>
+                    <Link className={styles.link} href={"/services"}>
                       <BiChevronsLeft className={`${styles.icon}`} />
-                      الصفحة الرئيسية
+                      الخدمات
                     </Link>
                   </li>
                   <li className={styles.list__item}>
-                    <Link className={styles.link} href={"/"}>
+                    <Link className={styles.link} href={"/gallery"}>
                       <BiChevronsLeft className={`${styles.icon}`} />
-                      الصفحة الرئيسية
+                      المعرض
                     </Link>
                   </li>
                   <li className={styles.list__item}>
-                    <Link className={styles.link} href={"/"}>
+                    <Link className={styles.link} href={"/contact-us"}>
                       <BiChevronsLeft className={`${styles.icon}`} />
-                      الصفحة الرئيسية
+                      تواصل معنا
                     </Link>
                   </li>
                 </ul>
@@ -129,27 +129,33 @@ export default function MainMenu() {
               <div className="col">
                 <ul className={styles.links__list}>
                   <li className={styles.list__item}>
-                    <Link className={styles.link} href={"/"}>
+                    <Link className={styles.link} href={"/about-us"}>
                       <BiChevronsLeft className={`${styles.icon}`} />
-                      الصفحة الرئيسية
+                      من نحن
                     </Link>
-                  </li>{" "}
+                  </li>
                   <li className={styles.list__item}>
-                    <Link className={styles.link} href={"/"}>
+                    <Link className={styles.link} href={"/departments"}>
                       <BiChevronsLeft className={`${styles.icon}`} />
-                      الصفحة الرئيسية
+                      الأقسام
                     </Link>
-                  </li>{" "}
+                  </li>
                   <li className={styles.list__item}>
-                    <Link className={styles.link} href={"/"}>
+                    <Link className={styles.link} href={"/specialists"}>
                       <BiChevronsLeft className={`${styles.icon}`} />
-                      الصفحة الرئيسية
+                      الأستشاريين
                     </Link>
-                  </li>{" "}
+                  </li>
                   <li className={styles.list__item}>
-                    <Link className={styles.link} href={"/"}>
+                    <Link className={styles.link} href={"/blog"}>
                       <BiChevronsLeft className={`${styles.icon}`} />
-                      الصفحة الرئيسية
+                      الأخبار
+                    </Link>
+                  </li>
+                  <li className={styles.list__item}>
+                    <Link className={styles.link} href={"/faq"}>
+                      <BiChevronsLeft className={`${styles.icon}`} />
+                      الاسئلة الشائعة
                     </Link>
                   </li>
                 </ul>

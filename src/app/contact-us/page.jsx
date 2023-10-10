@@ -1,4 +1,3 @@
-import React from "react";
 import Breadcrumb from "../../../components/Breadcrumb";
 import GetInTouchForm from "../../../components/contact-us/GetInTouchForm";
 import GoogleMap from "../../../components/contact-us/GoogleMap";
@@ -24,7 +23,7 @@ export default function Contact_us() {
         ]}
         heading={"تواصل"}
       />
-      <GetInTouchForm />
+      {/* <GetInTouchForm /> */}
       <InfoBar />
       <GoogleMap />
     </div>

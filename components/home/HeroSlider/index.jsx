@@ -7,8 +7,35 @@ import { AiOutlineRight, AiOutlineLeft } from "react-icons/ai";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
-
 import styles from "./.module.scss";
+
+const data = [
+  {
+    darkBg: true,
+
+    background: "3",
+    title:
+      "وفقاً لتوجيهات الرئيس عبدالفتاح السيسي انشئنا المركز ليصبح نموذجاً مرجعياً متميزاً",
+  },
+  {
+    darkBg: true,
+    background: "1",
+    title:
+      "وظيفتنا تأهيل اطفال القدرات الخاصة وتقديم افضل البرامج العلاجية لهم",
+  },
+  {
+    darkBg: true,
+    background: "2",
+    title:
+      "نعمل على اعداد وتأهيل العاملين بالمجال عن طريق الدبلومات التدريبية وورش العمل",
+  },
+  {
+    darkBg: true,
+    background: "4",
+    title:
+      "هدفنا الحفاظ على الريادة والأصالة وتلبية طموحات المجتمع فى مستوى خدماته وارضاء كافة شركاء النجاح",
+  },
+];
 
 export default function HeroSlider() {
   return (
@@ -36,12 +63,13 @@ export default function HeroSlider() {
         }}
         effect="fade"
       >
-        <SwiperSlide>
-          <HeroSlide darkBg={true} el={"1"} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <HeroSlide el={"2"} />
-        </SwiperSlide>
+        {data.map((item, i) => {
+          return (
+            <SwiperSlide key={i}>
+              <HeroSlide item={item} />
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
     </div>
   );

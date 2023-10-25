@@ -11,6 +11,7 @@ export default function Contact_us() {
   return (
     <div className={"contact__us__page__wrapper"}>
       <Breadcrumb
+        extend={true}
         bg="contact"
         items={[
           { name: "الرئيسية", path: "/", clickable: true },

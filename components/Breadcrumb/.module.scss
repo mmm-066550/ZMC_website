@@ -6,6 +6,7 @@
   justify-content: center;
   position: relative;
   overflow: hidden !important;
+  text-align: center;
   &::before {
     position: absolute;
     left: 0;
@@ -30,6 +31,7 @@
       font-weight: 800;
       color: #fff;
       text-shadow: 1px 1px 5px #000;
+      text-align: center;
     }
     .breadcrumb__list {
       display: flex;

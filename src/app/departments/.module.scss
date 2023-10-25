@@ -1,0 +1,13 @@
+@import "../../../styles/variables.scss";
+
+.departments__page {
+  background-color: #fff;
+  .departments__container {
+    padding: 5rem 0;
+    .page__header {
+      color: $blue__color;
+      font-weight: 800;
+      text-align: center;
+    }
+  }
+}

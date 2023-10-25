@@ -20,7 +20,7 @@ export default function NotFound() {
               </div>
               <h1 className={styles.head}>هذه الصفحة غير موجودة</h1>
               <Link className={styles.back__btn} href={"/"}>
-                العودة الى الصفحة الرئيسية
+                العودة إلى الصفحة الرئيسية
               </Link>
             </div>
           </div>

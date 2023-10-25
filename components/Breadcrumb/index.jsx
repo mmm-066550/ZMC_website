@@ -3,7 +3,7 @@ import styles from "./.module.scss";
 import Link from "next/link";
 import { AiOutlineLeft } from "react-icons/ai";
 
-export default function Breadcrumb({ items, heading, bg }) {
+export default function Breadcrumb({ items, heading, bg, extend }) {
   return (
     <div
       style={{
@@ -12,11 +12,19 @@ export default function Breadcrumb({ items, heading, bg }) {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundSize: "cover",
+        height: `${extend ? "450px" : ""}`,
       }}
       className={styles.breadcrumb__wrapper}
     >
       <div className={styles.breadcrumb__container}>
-        <h1 className={styles.breadcrumb__heading}>{heading}</h1>
+        <h1
+          style={{
+            marginTop: `${extend ? "-80px" : ""}`,
+          }}
+          className={styles.breadcrumb__heading}
+        >
+          {heading}
+        </h1>
         <ul className={styles.breadcrumb__list}>
           {items.map((item, i) => (
             <li className={styles.breadcrumb__item} key={i}>

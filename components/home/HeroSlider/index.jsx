@@ -1,3 +1,5 @@
+"use client";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import HeroSlide from "./HeroSlide";
 import { Navigation, Autoplay, EffectFade } from "swiper/modules";

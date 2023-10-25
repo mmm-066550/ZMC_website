@@ -1,0 +1,27 @@
+@import "../../styles/variables.scss";
+.datablock__wrapper {
+  .block__heading {
+    color: $blue__color;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 2.25rem;
+  }
+  .content {
+    opacity: 0.85;
+    font-size: 18px;
+  }
+  .img__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 12px;
+    overflow: hidden;
+    img {
+      all: unset;
+      width: 100%;
+      object-position: center;
+      object-fit: cover;
+    }
+  }
+}

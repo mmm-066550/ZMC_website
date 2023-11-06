@@ -67,7 +67,7 @@ export default function MainHeader({ mobileMenuOpen, setMobileMenuOpen }) {
                     <span className={styles.title}>رقم الهاتف :</span>
                     <span className={styles.value}>
                       01002198575 <br />
-                      01205073286
+                      01145495410
                     </span>
                   </div>
                 </div>

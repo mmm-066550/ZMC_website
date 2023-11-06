@@ -41,7 +41,7 @@ export default function InfoBar() {
                 </span>
                 <div className={styles.fact}>
                   <span className={styles.title}> ارقام الهواتف :</span>
-                  <p className={styles.value}>01002198575 , 01205073286 </p>
+                  <p className={styles.value}>01002198575 , 01145495410 </p>
                 </div>
               </div>
             </div>

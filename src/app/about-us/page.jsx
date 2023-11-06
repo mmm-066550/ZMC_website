@@ -21,7 +21,7 @@ export default function AboutUsPage() {
         ]}
         heading={"من  نحن"}
       />
-      <CenterVision />
+      <CenterVision content={"center"} />
     </div>
   );
 }

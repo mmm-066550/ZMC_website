@@ -13,40 +13,41 @@ const kufam = Kufam({
   weight: "400",
 });
 
-const items = [
-  {
-    icon: "stethoscope",
-    head: "الأستشاريين والأخصائيين",
-    text: "نخبة من الأطباء الأستشاريين والأخصائيين المعتمدين والمؤهلين فى المجال .",
-  },
-  {
-    icon: "drop",
-    head: "وحدة العلاج المائي",
-    text: "وحدة علاج مائي مجهزة بأحدث الوسائل للتعامل مع الحالات الخاصة من ذوي الهمم .",
-  },
-  {
-    icon: "spine",
-    head: "وحدة العمود الفقري",
-    text: "وحدة عمود فقري لعلاج تشوهات الأطفال من ذوي الهمم",
-  },
-  {
-    icon: "disable",
-    head: "ذوي الهمم",
-    text: "يعتبر مركز النسور لذوي الهمم وحدة متكاملة لجميع الحالات من ذوي الهمم .",
-  },
-  {
-    icon: "ambulance",
-    head: "وسائل النقل",
-    text: "توفر وسائل نقل و مواصلات مجهزة وآمنة لنقل الحالات من وإلى المركز دون عناء .",
-  },
-  {
-    icon: "iso",
-    head: "ISO 9001",
-    text: `إعتماد المركز والأكاديمية من الهيئة الأسترالية للإعتماد والجودة على شهاده الايزو 9001 فى 2015`,
-  },
-];
-
-export default function SetsUsPartSection() {
+export default function SetsUsPartSection({ data }) {
+  const items = data?.items
+    ? data.items
+    : [
+        {
+          icon: "stethoscope",
+          head: "الأستشاريين والأخصائيين",
+          text: "نخبة من الأطباء الأستشاريين والأخصائيين المعتمدين والمؤهلين فى المجال .",
+        },
+        {
+          icon: "drop",
+          head: "وحدة العلاج المائي",
+          text: "وحدة علاج مائي مجهزة بأحدث الوسائل للتعامل مع الحالات الخاصة من ذوي الهمم .",
+        },
+        {
+          icon: "spine",
+          head: "وحدة العمود الفقري",
+          text: "وحدة عمود فقري لعلاج تشوهات الأطفال من ذوي الهمم",
+        },
+        {
+          icon: "disable",
+          head: "ذوي الهمم",
+          text: "يعتبر مركز النسور لذوي الهمم وحدة متكاملة لجميع الحالات من ذوي الهمم .",
+        },
+        {
+          icon: "ambulance",
+          head: "وسائل النقل",
+          text: "توفر وسائل نقل و مواصلات مجهزة وآمنة لنقل الحالات من وإلى المركز دون عناء .",
+        },
+        {
+          icon: "iso",
+          head: "ISO 9001",
+          text: `إعتماد المركز والأكاديمية من الهيئة الأسترالية للإعتماد والجودة على شهاده الايزو 9001 فى 2015`,
+        },
+      ];
   return (
     <section className={styles.sets__us__up__section}>
       <div className={styles.section__container}>
@@ -54,11 +55,15 @@ export default function SetsUsPartSection() {
           <div className="row align-items-center justify-content-center">
             <div className="col-12 col-xl-6 text-center text-xl-end">
               <div className={styles.text}>
-                <h5 className={kufam.className}>ما يـمـيـزنــا</h5>
+                <h5 className={kufam.className}>
+                  {data ? data.title : " ما يـمـيـزنــا"}
+                </h5>
                 <p>
-                  ينفرد مركز النسور لذوي الهمم ( زايد الطبي ) بالعديد من
+                  {data
+                    ? data.content
+                    : `ينفرد مركز النسور لذوي الهمم ( زايد الطبي ) بالعديد من
                   المميزات التي تجعله منفرداً على مستوى مصر وأفريقيا من خلال
-                  الأتي :
+                  الأتي :`}
                 </p>
               </div>
             </div>

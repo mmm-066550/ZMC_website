@@ -7,7 +7,7 @@ export default function page() {
   return (
     <main>
       <HeroSlider />
-      <CenterVision />
+      <CenterVision content={"center"} />
       <SetsUsPartSection />
       <OurServicesSection />
     </main>

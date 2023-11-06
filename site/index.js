@@ -3,7 +3,7 @@ const SiteMap = [
   { nav: true, name: "من نحن", route: "about-us" },
   { nav: true, name: "الأكاديمية", route: "academy" },
   { nav: true, name: "الأقسام", route: "departments" },
-  { nav: true, name: "الخدمات", route: "services" },
+  { nav: true, name: "العيادات", route: "services" },
   { nav: false, name: "الأستشاريين", route: "specialists" },
   { nav: false, name: "المعرض", route: "gallery" },
   { nav: false, name: "الأخبار", route: "blog" },

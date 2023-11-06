@@ -109,7 +109,7 @@ export default function MainMenu() {
                   <li className={styles.list__item}>
                     <Link className={styles.link} href={"/services"}>
                       <BiChevronsLeft className={`${styles.icon}`} />
-                      الخدمات
+                      العيادات
                     </Link>
                   </li>
                   <li className={styles.list__item}>

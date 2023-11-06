@@ -36,7 +36,7 @@ const setService = (service) => {
 
     case "electrotherapy-unit":
       return {
-        name: "وحدة العلاج بالكهرباء",
+        name: "وحدة العلاج الطبيعى",
         data: ServicesData[6],
         bg: "behave",
       };
@@ -75,7 +75,7 @@ export default function DepartmentPage({ params }) {
         bg={service.bg}
         items={[
           { name: "الرئيسية", path: "/", clickable: true },
-          { name: "الخدمات", path: "/services", clickable: true },
+          { name: "العيادات", path: "/services", clickable: true },
           {
             name: service.name,
             clickable: false,

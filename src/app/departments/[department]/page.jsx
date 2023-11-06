@@ -34,6 +34,14 @@ const setDepartment = (department) => {
 
     case "reflexes":
       return { name: "المنعكسات", data: departmentsData[8], bg: "reflexes" };
+    case "slow-learning":
+      return { name: "بطئ التعلم", data: departmentsData[9], bg: "learn" };
+    case "day-care":
+      return {
+        name: "الرعاية النهارية",
+        data: departmentsData[10],
+        bg: "skills",
+      };
 
     default:
       break;

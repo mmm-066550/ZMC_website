@@ -52,7 +52,7 @@ const services = [
   {
     type: "services",
     icon: "elec",
-    name: "وحدة العلاج بالكهرباء",
+    name: "وحدة العلاج الطبيعى",
     enName: "electrotherapy-unit",
   },
   {
@@ -79,13 +79,13 @@ export default function ServicesPage() {
         items={[
           { name: "الرئيسية", path: "/", clickable: true },
           {
-            name: "الخدمات",
+            name: "العيادات",
             path: "/services",
             clickable: false,
             current: true,
           },
         ]}
-        heading={"الخدمات"}
+        heading={"العيادات"}
       />
       <div className={styles.services__container}>
         <div className="my-4 px-3 mt-5">

@@ -26,7 +26,7 @@ export default function HeroSlide({ item }) {
                 <div className="d-inline-flex flex-column align-items-md-start text-center text-md-end align-items-center">
                   <h6 className={styles.heading}>مركز النسور لذوى الهمم</h6>
                   <h1 className={styles.slogan}>{item?.title}</h1>
-                  <button className={styles.btn}>لمعرفة المزيد</button>
+                  {/* <button className={styles.btn}>لمعرفة المزيد</button> */}
                 </div>
               </div>
             </div>

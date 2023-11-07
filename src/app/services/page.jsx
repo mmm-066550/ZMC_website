@@ -53,7 +53,7 @@ const services = [
     type: "services",
     icon: "elec",
     name: "وحدة العلاج الطبيعى",
-    enName: "electrotherapy-unit",
+    enName: "physiotherapy-unit",
   },
   {
     type: "services",

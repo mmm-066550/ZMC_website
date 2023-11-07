@@ -4,12 +4,42 @@ import DepCard from "../../DepCard";
 
 export default function PartnersSection() {
   const items = [
-    { disable: true, icon: "speech", name: "دبلومه التخاطب والتوحد" },
-    { disable: true, icon: "learn", name: "دبلومة التربية الخاصة " },
-    { disable: true, icon: "behavior", name: "دبلومة تعديل السلوك " },
-    { disable: true, icon: "sensory", name: "دبلومة صعوبات التعلم " },
-    { disable: true, icon: "occ", name: "دبلومة العلاج الوظيفى " },
-    { disable: true, icon: "mon", name: "دبلومة المنتسورى " },
+    {
+      disable: true,
+      icon: "speech",
+      name: "دبلومه التخاطب والتوحد",
+      sum: "برنامج تدريبى لتأهيل وإعداد أخصائي تخاطب وتوحد",
+    },
+    {
+      disable: true,
+      icon: "learn",
+      name: "دبلومة التربية الخاصة ",
+      sum: "برنامج تدريبى لتأهيل وإعداد أخصائي تربية خاصة",
+    },
+    {
+      disable: true,
+      icon: "behavior",
+      name: "دبلومة تعديل السلوك ",
+      sum: "برنامج تدريبى لتأهيل وإعداد أخصائي تعديل سلوك",
+    },
+    {
+      disable: true,
+      icon: "sensory",
+      name: "دبلومة صعوبات التعلم ",
+      sum: "برنامج تدريبى لتأهيل وإعداد أخصائي صعوبات تعلم",
+    },
+    {
+      disable: true,
+      icon: "occ",
+      name: "دبلومة العلاج الوظيفى ",
+      sum: "برنامج تدريبى لتأهيل وإعداد أخصائي علاج وظيفى",
+    },
+    {
+      disable: true,
+      icon: "mon",
+      name: "دبلومة المنتسورى ",
+      sum: "برنامج تدريبى لتأهيل وإعداد أخصائي منتسورى",
+    },
   ];
   const partners = [
     {

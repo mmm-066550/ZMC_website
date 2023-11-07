@@ -7,7 +7,7 @@ import { BiChevronsLeft } from "react-icons/bi";
 import {
   FaFacebookF,
   FaInstagram,
-  FaTwitter,
+  FaYoutube,
   FaLinkedinIn,
   FaGooglePlusG,
 } from "react-icons/fa";
@@ -49,7 +49,7 @@ export default function MainMenu() {
               </div>
 
               <div className={styles.subscription__form__wrapper}>
-                <form action="">
+                <form onSubmit={(e) => e.preventDefault()} action="">
                   <input
                     type="email"
                     placeholder="من فضلك ادخل بريدك الألكتروني"
@@ -62,21 +62,33 @@ export default function MainMenu() {
 
               <ul className={styles.social__links__list}>
                 <li className={styles.list__item}>
-                  <a className={styles.list__link} href="/" target="_blank">
+                  <a
+                    className={styles.list__link}
+                    href="https://www.facebook.com/zayedcentre"
+                    target="_blank"
+                  >
                     <FaFacebookF />
                   </a>
                 </li>
                 <li className={styles.list__item}>
-                  <a className={styles.list__link} href="/" target="_blank">
+                  <a
+                    className={styles.list__link}
+                    href="https://www.instagram.com/zayedmedicalcenter/"
+                    target="_blank"
+                  >
                     <FaInstagram />
                   </a>
                 </li>
                 <li className={styles.list__item}>
-                  <a className={styles.list__link} href="/" target="_blank">
-                    <FaTwitter />
+                  <a
+                    className={styles.list__link}
+                    href="https://www.youtube.com/@user-po4si7cr7k"
+                    target="_blank"
+                  >
+                    <FaYoutube />
                   </a>
                 </li>
-                <li className={styles.list__item}>
+                {/* <li className={styles.list__item}>
                   <a className={styles.list__link} href="/" target="_blank">
                     <FaLinkedinIn />
                   </a>
@@ -85,7 +97,7 @@ export default function MainMenu() {
                   <a className={styles.list__link} href="/" target="_blank">
                     <FaGooglePlusG />
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

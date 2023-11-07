@@ -34,11 +34,11 @@ const setService = (service) => {
         bg: "elec",
       };
 
-    case "electrotherapy-unit":
+    case "physiotherapy-unit":
       return {
         name: "وحدة العلاج الطبيعى",
         data: ServicesData[6],
-        bg: "behave",
+        bg: "nat",
       };
 
     case "ozone-therapy":

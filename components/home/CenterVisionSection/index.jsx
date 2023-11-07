@@ -21,9 +21,9 @@ export default function CenterVision({ content }) {
           <div className="row align-items-center h-100">
             <div className="col-12 col-lg-6 h-100">
               <div className={styles.img__wrapper}>
-                <button className={styles.play__btn}>
+                {/* <button className={styles.play__btn}>
                   <ImPlay3 className={styles.icon} />
-                </button>
+                </button> */}
                 <Image priority src={"/assets/images/hex.png"} alt="hex" fill />
               </div>
             </div>

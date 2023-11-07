@@ -24,4 +24,18 @@
       object-fit: cover;
     }
   }
+  .video__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 12px;
+    overflow: hidden;
+    video {
+      all: unset;
+      width: 100%;
+      object-position: center;
+      object-fit: cover;
+    }
+  }
 }

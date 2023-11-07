@@ -1,0 +1,15 @@
+@import "../../../styles/variables.scss";
+
+.images__wrapper__section {
+  background-color: #fff;
+  padding: 5rem 0;
+  text-align: center;
+  .heading {
+    color: $blue__color;
+    display: block;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+    font-size: 2.25rem;
+    padding: 0 3rem;
+  }
+}

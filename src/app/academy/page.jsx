@@ -3,10 +3,34 @@ import CenterVision from "../../../components/home/CenterVisionSection";
 import SetsUsPartSection from "../../../components/home/SetsUsPartSection";
 import MidSection from "../../../components/academy/MidSection";
 import PartnersSection from "../../../components/academy/PartnersSection";
+import DataBlock from "../../../components/DataBlock";
+import styles from "./.module.scss";
+import Gallery from "../../../components/academy/Gallery";
 
 export const metadata = {
   title: "مركز النسور لذوى الهمم | الأكاديمية",
 };
+
+const data = [
+  {
+    title: "الدبلومات الفنية المختلفة الخاصة بمجال تأهيل ذوي الهمم",
+    content:
+      " أكاديمية النسور تعد من أفضل المؤسسات أهتماماٌ بالتعليم في مجال ذوي الهمم باستخدام أحدث الأساليب المتطورة بهدف تأهيل الكوادر البشرية فائقة الكفاءة من خلال مجموعة من الدبلومات الفنية",
+    reverse: true,
+    video: "assets/videos/diplome.mp4",
+  },
+  {
+    title: "اراء بعض الطلاب والمحاضرين فى دبلوماتنا",
+    video: "assets/videos/op.mp4",
+  },
+  {
+    title: "التدريب العملى بمركز النسور لذوي الهمم",
+    content:
+      "تقدم أكاديمية النسور للتدريب بالمشاركة مع مركز النسور برامج تدريب عملية مميزة بمحتوى تدريبى قيم ومميز",
+    reverse: true,
+    video: "assets/videos/training.mp4",
+  },
+];
 
 export default function Academy() {
   return (
@@ -38,6 +62,12 @@ export default function Academy() {
       />
       <MidSection />
       <PartnersSection />
+      <div className={styles.videos__wrapper}>
+        {data.map((item, index) => (
+          <DataBlock data={item} key={index} />
+        ))}
+      </div>
+      <Gallery />
     </section>
   );
 }

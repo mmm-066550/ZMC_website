@@ -27,3 +27,11 @@ ul {
 .stop {
   overflow: hidden;
 }
+.react-responsive-modal-root {
+  background-color: rgba(0, 0, 0, 0.397);
+}
+.react-responsive-modal-modal {
+  // width: 100% !important;
+  max-width: 1200px !important;
+  padding-top: 3.5rem !important;
+}

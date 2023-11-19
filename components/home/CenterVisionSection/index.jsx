@@ -1,3 +1,5 @@
+"use client";
+
 import { Aref_Ruqaa_Ink, Kufam } from "next/font/google";
 const ari = Aref_Ruqaa_Ink({
   subsets: "arabic",
@@ -12,19 +14,38 @@ const kufam = Kufam({
 import styles from "./.module.scss";
 import Image from "next/image";
 import { ImPlay3 } from "react-icons/im";
+import React, { useState } from "react";
+import "react-responsive-modal/styles.css";
+import { Modal } from "react-responsive-modal";
 
 export default function CenterVision({ content }) {
+  const [open, setOpen] = useState(false);
+  const onOpenModal = () => setOpen(true);
+  const onCloseModal = () => setOpen(false);
   return (
     <section className={styles.center__vision__section}>
+      <Modal open={open} onClose={onCloseModal} center>
+        <video
+          className={styles.video}
+          autoPlay
+          controls
+          src={`/assets/videos/${content}.mp4`}
+        />
+      </Modal>
       <div className={styles.wrapper}>
         <div className="container h-100">
           <div className="row align-items-center h-100">
             <div className="col-12 col-lg-6 h-100">
               <div className={styles.img__wrapper}>
-                {/* <button className={styles.play__btn}>
+                <button onClick={onOpenModal} className={styles.play__btn}>
                   <ImPlay3 className={styles.icon} />
-                </button> */}
-                <Image priority src={"/assets/images/hex.png"} alt="hex" fill />
+                </button>
+                <Image
+                  priority
+                  src={`/assets/images/hex-${content}.png`}
+                  alt="hex"
+                  fill
+                />
               </div>
             </div>
             <div className="col-12 col-lg-6">
